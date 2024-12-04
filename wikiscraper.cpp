@@ -27,7 +27,7 @@ using std::unordered_map;   using std::unordered_set;
 // BEGIN STUDENT CODE HERE
 bool valid_wikilink(const string& link) {
     // replace these lines!
-	return std::all_of(link.begin(),link.end(),[](char c){return c != '#' && c != ':';});
+	return std::all_of(link.begin(),link.end(),[](const char &c){return c != '#' && c != ':';});
 }
 // END STUDENT CODE HERE
 ///////////////////////////////////////////////////////////////////////////////////////////////////
